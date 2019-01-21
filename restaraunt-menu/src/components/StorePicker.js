@@ -5,7 +5,7 @@ import React from 'react';
 class StorePicker extends React.Component {
   // what DOM element do I return to the page
   render(){
-    return <p> I am a store Picker</p>
+    return form.pizza
   }
 }
 

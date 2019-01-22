@@ -11,3 +11,7 @@ class Inventory extends React.Component {
 }
 
 export default Inventory;
+
+
+// state is where the data lives
+// props is how it gets to where it needs to be displayed

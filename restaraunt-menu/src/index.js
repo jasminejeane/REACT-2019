@@ -4,11 +4,10 @@
 import React from 'react';
 // {} if you want to cherry pick a method from the package
 import { render } from 'react-dom';
-import StorePicker from './components/StorePicker';
-import App from './components/App';
+import Router from './components/Router';
 import './css/style.css';
 // needs a DOM element to mount onto the page
-render(<App/>, document.querySelector('#main'));
+render(<Router />, document.querySelector('#main'));
 
 
 // create react app does all the under the hood webpack

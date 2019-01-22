@@ -9,13 +9,27 @@ class StorePicker extends React.Component {
   // <React.Fragment> tag, <div> <> or
   // import React, {Fragment} from 'react';
   // then use Fragment instead of React.Fragment
+  myInput =React.createRef();
 
+  // arrow functions binding
+goToStore = (event) => {
+  event.preventDefault();
+  // get text from input
+  console.log(this);
+  // change page to whatever was entered
+}
   render(){
     return (
       // no sibling elements
-      <form action="" className="store-selector">
+      <form action="" className="store-selector"
+      onSubmit={this.goToStore}>
       <h2> Please Enter A Store  </h2>
-      <input type="text" required placeholder="Store Name" />
+      <input
+      type="text"
+      ref={this.myInput}
+      required
+      placeholder="Store Name"
+       />
       <button type="submit"> Visit Store --> </button>
     </form>
   )

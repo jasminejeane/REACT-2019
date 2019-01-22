@@ -12,8 +12,8 @@ class App extends React.Component {
         {/* anything other than a string needs to be {} */}
           <Header tagline="Fresh Seafood Market" age={500}/>
         </div>
-        <Inventory/>
         <Order/>
+        <Inventory/>
       </div>
     )
   }
